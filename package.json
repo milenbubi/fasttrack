@@ -1,0 +1,25 @@
+{
+  "name": "fasttrack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/milenbubi/fasttrack.git",
+  "author": "Phillip Coitchev <milenbubi@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend"
+    ],
+    "nohoist": [
+      "**/*"
+    ]
+  },
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"yarn workspace backend dev\" \"yarn workspace frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "tsx": "^4.21.0"
+  }
+}
