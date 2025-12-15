@@ -1,4 +1,4 @@
-import type { Page } from "./models";
+import { Page } from "./models";
 
 
 export function getPageFromQuery(): Page {

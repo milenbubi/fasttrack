@@ -19,16 +19,14 @@ export interface IInsightsResponse {
 export interface IOverviewResponse {
   sectionTitle: string;
   score: number;
-  status: "Critical" | "Average" | "Strong";
+  status: Status;
   comparison: {
     value: number;
     label: string;
   };
-  visual: {
-    type: "radial" | "bar" | "segmented";
-    max: number;
-  };
 }
 
 
+
 export type Page = "overview" | "insight";
+export type Status = "Critical" | "Average" | "Strong";

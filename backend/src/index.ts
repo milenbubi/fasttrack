@@ -1,5 +1,5 @@
-import express from "express";
 import cors from "cors";
+import express from "express";
 
 
 
@@ -14,14 +14,10 @@ app.get("/overview", (_req, res) => {
   res.json({
     sectionTitle: "Strategy in Action",
     score: 54,
-    status: "Critical", // Critical | Average | Strong
+    status: "Strong", // Critical | Average | Strong
     comparison: {
       value: -15,
       label: "below benchmark"
-    },
-    visual: {
-      type: "radial", // frontend decision
-      max: 100
     }
   });
 });

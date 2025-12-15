@@ -1,4 +1,4 @@
-import type { IInsightsResponse, IOverviewResponse } from "./utils/models";
+import { IInsightsResponse, IOverviewResponse } from "./utils/models";
 
 const API_URL = "http://localhost:3688";
 

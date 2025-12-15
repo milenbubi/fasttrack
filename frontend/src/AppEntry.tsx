@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import type { Page } from "./utils/models";
+import { Page } from "./utils/models";
 import InsightPage from "./pages/InsightPage";
 import OverviewPage from "./pages/OverviewPage";
+import RouterButton from "./components/RouterButton";
 import { getPageFromQuery, normalizePageName } from "./utils/router";
 
 
@@ -37,18 +38,11 @@ function AppEntry() {
   };
 
 
-  if (!page) {
-    return null;
-  }
-
 
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
-      {page === "overview" ?
-        <OverviewPage onNext={() => navigate("insight")} />
-        :
-        <InsightPage onBack={() => navigate("overview")} />
-      }
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "100%", gap: 20, padding: 10 }}>
+      {page && (page === "overview" ? <OverviewPage /> : <InsightPage />)}
+      {page && <RouterButton page={page} onClick={navigate} />}
     </div>
   );
 }

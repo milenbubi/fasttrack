@@ -1,12 +1,4 @@
-import type { Page } from "../utils/models";
-
-interface IProps {
-  onBack: (page: Page) => void;
-}
-
-
-
-function InsightPage({ onBack }: IProps) {
+function InsightPage() {
 
 
 
@@ -15,7 +7,6 @@ function InsightPage({ onBack }: IProps) {
       style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}
     >
       <div>
-        <button onClick={() => onBack("insight")}>Insight</button>
       </div>
     </div>
   );
