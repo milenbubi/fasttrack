@@ -1,13 +1,10 @@
 import type { IInsightsResponse, IOverviewResponse } from "./utils/models";
 
-const API_URL = import.meta.env.VITE_API_URL;
-
-if (!API_URL) {
-  throw new Error("VITE_API_URL is not defined");
-}
+const API_URL = "http://localhost:3688";
 
 
- async function getOverview(): Promise<IOverviewResponse> {
+
+async function getOverview(): Promise<IOverviewResponse> {
   const res = await fetch(`${API_URL}/overview`);
 
   if (!res.ok) {
