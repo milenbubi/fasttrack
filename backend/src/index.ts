@@ -37,17 +37,17 @@ app.get("/insights", (_req, res) => {
       {
         title: "Cadence",
         text: "Execution rhythm is inconsistent across teams.",
-        value: 48
+        value: 23
       },
       {
         title: "Ownership",
         text: "Decisions stall without clearly defined owners.",
-        value: 51
+        value: 46
       }
     ],
     visual: {
       type: "bar", // chart / bar / sparkline
-      values: [62, 48, 51]
+      values: [62, 23, 46]
     },
     navigation: {
       prev: null,
