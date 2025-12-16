@@ -19,7 +19,6 @@ A **monorepo** project containing both **frontend** and **backend**.
 ### _Frontend_
 
 - **Framework:** React
-- **Styling:** Tailwind CSS
 - **Routing:** Simple React Router
 - **Port:** 3614
 
