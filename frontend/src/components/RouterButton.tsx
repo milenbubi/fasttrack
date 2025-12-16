@@ -19,12 +19,12 @@ function RouterButton({ page, onClick }: IProps) {
 
       {page === "insight" && (
         <div style={{ display: "flex", height: 28, gap: 40, alignItems: "center" }}>
-          <div style={{ display: "flex", height: "100%", gap: 5 }}>
+          <div style={{ display: "flex", height: "100%", gap: 5, cursor: "pointer" }} onClick={() => onClick("overview")}>
             <div style={{ transform: "scale(-0.7, 0.7)" }}><Arrow /></div>
-            <button onClick={() => onClick("overview")}>{"Back to Overview"}</button>
+            <button>{"Back to Overview"}</button>
           </div>
 
-          <div style={{ display: "flex", height: "100%", gap: 5 }}>
+          <div style={{ display: "flex", height: "100%", gap: 5, cursor: "pointer" }}>
             <button>{"Next insight"}</button>
             <div style={{ transform: "scale(0.7)" }}><Arrow /></div>
           </div>

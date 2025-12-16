@@ -89,10 +89,10 @@ function InsightsPage() {
                   title={`${insight.title}: ${insight.value}`}
                 />
                 {/* Име под бара */}
-                <span style={{ marginTop: 8, fontSize: 12, color: "#374151", textAlign: "center" }}>
+                <span style={{ marginTop: 4, fontSize: 12, color: "#374151" }}>
                   {insight.title}
                 </span>
-                <span style={{ marginTop: 4, fontSize: 12, color: "#0b244dff", textAlign: "center" }}>
+                <span style={{  fontSize: 12, color: "#0b244dff" }}>
                   {insight.value + "%"}
                 </span>
               </div>

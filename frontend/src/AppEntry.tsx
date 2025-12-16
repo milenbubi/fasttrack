@@ -40,7 +40,7 @@ function AppEntry() {
 
 
   return (
-    <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "100%", gap: 20, padding: 10 }}>
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%", gap: 20, padding: 10 }}>
       {page && (page === "overview" ? <OverviewPage /> : <InsightPage />)}
       {page && <RouterButton page={page} onClick={navigate} />}
     </div>
