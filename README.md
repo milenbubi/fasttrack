@@ -19,7 +19,8 @@ A **monorepo** project containing both **frontend** and **backend**.
 ### _Frontend_
 
 - **Framework:** React
-- **Routing:** Simple React Router
+- **Routing:** Simple custom React router based on the History API.
+
 - **Port:** 3614
 
 ### _Project Structure (Simplified)_
